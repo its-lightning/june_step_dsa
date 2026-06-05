@@ -1,7 +1,4 @@
-class Node:
-    def __init__(self,data,next = None):
-        self.data = data
-        self.next = next
+import node
 
 class LL_Queue:
     def __init__(self):
@@ -9,7 +6,7 @@ class LL_Queue:
         self.rear = None
 
     def enqueue(self,data):
-        new_node = Node(data,None)
+        new_node = node.Node(data,None)
         if self.front is None:
             self.front = new_node
             self.rear = new_node
@@ -43,7 +40,7 @@ class Circular_LL_Queue:
         self.rear = None
 
     def enqueue(self,data):
-        new_node = Node(data,None)
+        new_node = node.Node(data,None)
         if self.front is None:
             self.front = new_node
             self.rear = new_node

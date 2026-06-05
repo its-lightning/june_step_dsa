@@ -1,14 +1,11 @@
-class Node:
-    def __init__(self,data,next = None):
-        self.data = data
-        self.next = next
+import node
 
 class LL_Stack:
     def __init__(self):
         self.top = None
 
     def push(self,data):
-        self.top = Node(data,self.top)
+        self.top = node.Node(data,self.top)
     
     def pop(self):
         if self.top == None:
@@ -46,9 +43,10 @@ def main():
 
     a.printall()
 
-    print(a.pop())
-    print(a.pop())
-    print(a.pop())
+    print("popped" , a.pop())
+    print("popped" , a.pop())
+    print("popped" , a.pop())
+    print()
 
     a.printall()
 
