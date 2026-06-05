@@ -1,6 +1,6 @@
 import node
 
-class LL_Queue:
+class Queue_Linked_List:
     def __init__(self):
         self.front = None
         self.rear = None
@@ -21,7 +21,7 @@ class LL_Queue:
         self.front = self.front.next
         return temp
 
-class Array_Queue:
+class Queue_Array:
     def __init__(self):
         self.arr = []
 
@@ -34,7 +34,7 @@ class Array_Queue:
         data = self.arr.pop(0)
         return data
 
-class Circular_LL_Queue:
+class Circular_Queue_Linked_list:
     def __init__(self):
         self.front = None
         self.rear = None
@@ -56,7 +56,7 @@ class Circular_LL_Queue:
         self.front = self.front.next
         return temp
 
-class Circular_Array_Queue:
+class Circular_Queue_Array:
     def __init__(self,size):
         self.arr = [None] * size
         self.front = 0
@@ -84,7 +84,7 @@ class Circular_Array_Queue:
         return data
 
 def main():
-    a = Circular_Array_Queue(5)
+    a = Circular_Queue_Array(5)
 
     a.enqueue(10)
     a.enqueue(20)

@@ -1,6 +1,6 @@
 import node
 
-class LL_Stack:
+class Stack_Linked_List:
     def __init__(self):
         self.top = None
 
@@ -22,7 +22,7 @@ class LL_Stack:
             temp = temp.next
         print()
 
-class Array_Stack:
+class Stack_Array:
     def __init__(self):
         self.arr = []
 
@@ -36,7 +36,7 @@ class Array_Stack:
         return data      
 
 def main():
-    a = LL_Stack()
+    a = Stack_Linked_List()
     a.push(10)
     a.push(20)
     a.push(30)
