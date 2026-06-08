@@ -84,7 +84,7 @@ class Circular_Queue_Array:
         return data
 
 def main():
-    a = Circular_Queue_Array(5)
+    a = Queue_Linked_List()
 
     a.enqueue(10)
     a.enqueue(20)

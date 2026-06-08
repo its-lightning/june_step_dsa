@@ -4,7 +4,7 @@ class Node:
         self.next = next
     
 class Node_2pointer:
-    def __init__(self,data,previous = None,next = None):
+    def __init__(self,data,next = None,previous = None):
         self.data = data
-        self.previous = previous
         self.next = next
+        self.previous = previous
